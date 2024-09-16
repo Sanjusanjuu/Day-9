@@ -1,0 +1,32 @@
+1)
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    int *p=&a;
+    cout<<a<<endl;
+    cout<<*p;
+}
+
+2)
+#include <iostream>
+using namespace std;
+int main(){
+    int arr[]={10,20,30,40,50};
+    int *ptr=arr;
+    for(int i=0;i<5;i++){
+        cout<<*(ptr+i)<<" ";
+    }
+}
+
+3)
+#include <iostream>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    int *p=&a;
+    int *ptr=p;
+    cout<<*ptr;
+}
